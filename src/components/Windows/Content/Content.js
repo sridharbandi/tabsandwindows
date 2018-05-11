@@ -11,6 +11,9 @@ import Aux from '../../../hoc/Aux';
 const styles = theme => ({
     textField: {
         color: pink[500],
+    },
+    typoColor: {
+        color:'white'
     }
 });
 
@@ -31,7 +34,7 @@ const content = (props) => {
                     <Typography
                         id='header-title'
                         variant="headline"
-                        className={props.classes.textField}
+                        className={props.classes.typoColor}
                         component="h3">
                         This is {props.name} - {props.id}
                     </Typography>
