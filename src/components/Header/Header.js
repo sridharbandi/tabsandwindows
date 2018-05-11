@@ -7,7 +7,7 @@ const header = () => (
     <AppBar position = 'sticky' color = 'secondary'>
         <Toolbar>
             <Typography variant="title" color="inherit">
-                Playground
+                Tabs and Windows Demo
             </Typography>
         </Toolbar>
     </AppBar>
