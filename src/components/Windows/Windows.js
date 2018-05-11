@@ -39,10 +39,10 @@ class Windows extends Component {
     clickHanlder = (index) => {
         switch (index) {
             case 0:
-                window.open("/tab/" + converter.toWords(this.tabnum++));
+                window.open(process.env.PUBLIC_URL+"/tab/" + converter.toWords(this.tabnum++));
                 break;
             case 1:
-                window.open("/window/" + converter.toWords(this.windownum++), "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=400,height=400");
+                window.open(process.env.PUBLIC_URL+"/window/" + converter.toWords(this.windownum++), "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=400,height=400");
                 break;
             case 2:
                 var myWindow = window.open("", "Message Window", "width=400,height=300,top=100,left=100");
@@ -53,13 +53,13 @@ class Windows extends Component {
             case 3:
                 for (const elem of [0, 1, 2]) {
                     console.log(elem);
-                    window.open("/tab/" + converter.toWords(this.tabnum++));
+                    window.open(process.env.PUBLIC_URL+"/tab/" + converter.toWords(this.tabnum++));
                 }
                 break;
             case 4:
                 for (const elem of [0, 1, 2]) {
                     console.log(elem);
-                    window.open("/window/" + converter.toWords(this.windownum++), "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=400,height=400");
+                    window.open(process.env.PUBLIC_URL+"/window/" + converter.toWords(this.windownum++), "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=400,height=400");
                 }
                 break;
             default:
